@@ -1,0 +1,74 @@
+{
+  "kv_cache": {
+    "uncached": {
+      "sec": 0.4691147804260254,
+      "tok_per_s": 204.6407489289036
+    },
+    "cached": {
+      "sec": 0.27328014373779297,
+      "tok_per_s": 351.2878714382928
+    },
+    "speedup": 1.7166076320427144
+  },
+  "gqa": {
+    "config": {
+      "n_head": 32,
+      "head_dim": 128,
+      "n_layer": 32,
+      "seq": 4096,
+      "dtype_bytes": 2
+    },
+    "rows": [
+      {
+        "n_kv_head": 32,
+        "label": "MHA",
+        "kv_cache_MB": 2147.483648
+      },
+      {
+        "n_kv_head": 16,
+        "label": "GQA-16",
+        "kv_cache_MB": 1073.741824
+      },
+      {
+        "n_kv_head": 8,
+        "label": "GQA-8",
+        "kv_cache_MB": 536.870912
+      },
+      {
+        "n_kv_head": 4,
+        "label": "GQA-4",
+        "kv_cache_MB": 268.435456
+      },
+      {
+        "n_kv_head": 2,
+        "label": "GQA-2",
+        "kv_cache_MB": 134.217728
+      },
+      {
+        "n_kv_head": 1,
+        "label": "MQA",
+        "kv_cache_MB": 67.108864
+      }
+    ]
+  },
+  "quant": {
+    "fp32_MB": 38.063616,
+    "int8_MB": 10.27584,
+    "ratio": 3.704185351270553,
+    "output_cosine": 0.9998155236244202
+  },
+  "moe": {
+    "n_experts": 8,
+    "top_k": 2,
+    "counts": [
+      70,
+      65,
+      71,
+      60,
+      56,
+      65,
+      62,
+      63
+    ]
+  }
+}

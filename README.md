@@ -1,3 +1,5 @@
+<img src="assets/banner.png" alt="modernGPT — a modern LLM, implemented end to end" width="100%">
+
 # modernGPT
 
 A compact, **from-scratch** decoder-only language model that rebuilds Karpathy's
